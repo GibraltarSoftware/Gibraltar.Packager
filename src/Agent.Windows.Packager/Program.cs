@@ -64,6 +64,7 @@ namespace Gibraltar.Agent.Windows.Packager
 
                 string productName = null;
                 string applicationName = null;
+                string folder = null;
 
                 if (configuration != null)
                 {
@@ -87,6 +88,7 @@ namespace Gibraltar.Agent.Windows.Packager
                 {
                     productName = commandArgs["p"] ?? productName;
                     applicationName = commandArgs["a"] ?? applicationName;
+                    folder = commandArgs["folder"];
 
                     silentMode = (commandArgs["s"] != null);
                     waitForProcessExit = (commandArgs["w"] != null);
@@ -156,7 +158,7 @@ namespace Gibraltar.Agent.Windows.Packager
                         {
                             try
                             {
-                                using (Agent.Packager packager = new Agent.Packager(productName, applicationName))
+                                using (Agent.Packager packager = new Agent.Packager(productName, applicationName, folder))
                                 {
                                     transmitMode = transmitMode.ToUpperInvariant();
                                     switch (transmitMode)
