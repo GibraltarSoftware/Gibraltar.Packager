@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent.Windows.Packager", "src\Agent.Windows.Packager\Agent.Windows.Packager.csproj", "{35786458-CE5A-4706-99DE-FFA643DF0D85}"
+	ProjectSection(ProjectDependencies) = postProject
+		{562CBDF0-A6BA-454A-B6D9-D944ECA9571B} = {562CBDF0-A6BA-454A-B6D9-D944ECA9571B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agent.Windows.Packager.NET40", "src\Agent.Windows.Packager.NET40\Agent.Windows.Packager.NET40.csproj", "{562CBDF0-A6BA-454A-B6D9-D944ECA9571B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{D65616CF-CADC-4F8B-ABB3-1AC4AD502097}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
+		dependencies\NuGet.exe = dependencies\NuGet.exe
 		README.md = README.md
 	EndProjectSection
 EndProject

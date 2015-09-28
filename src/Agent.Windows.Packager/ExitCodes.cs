@@ -26,7 +26,7 @@ namespace Gibraltar.Agent.Windows.Packager
         MissingProductName = ConfigurationError | 2,
 
         /// <summary>
-        /// No transmit mode was speciifed in any configuration
+        /// No transmit mode was specified in any configuration
         /// </summary>
         MissingTransmitMode = ConfigurationError | 4,
 
