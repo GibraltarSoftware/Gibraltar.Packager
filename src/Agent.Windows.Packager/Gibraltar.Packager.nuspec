@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Gibraltar.Packager</id>
+    <version>$version$</version>
+    <title>Loupe Packager</title>
+    <authors>Gibraltar Software</authors>
+    <owners>Gibraltar Software</owners>
+    <copyright>Copyright © 2008-2015 Gibraltar Software, Inc.</copyright>
+    <iconUrl>http://www.gibraltarsoftware.com/loupe.ico</iconUrl>
+    <licenseUrl>https://github.com/GibraltarSoftware/Gibraltar.Packager/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/GibraltarSoftware/Gibraltar.Packager</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Executable that packages Loupe data for transport via file, email and the Loupe Server</description>
+    <summary />
+    <tags>Loupe Logging</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\Gibraltar.Packager.exe.config" target="lib\net20" />
+    <file src="..\Agent.Windows.Packager.NET40\bin\Release\Gibraltar.Packager.NET40.exe" target="lib\net40" />
+    <file src="..\Agent.Windows.Packager.NET40\bin\Release\Gibraltar.Packager.NET40.exe.config" target="lib\net40" />
+  </files>
+</package>
