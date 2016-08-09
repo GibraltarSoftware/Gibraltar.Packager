@@ -12,7 +12,7 @@
     <AssemblyName>Gibraltar.Packager</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\..\GibraltarSoftware.snk</AssemblyOriginatorKeyFile>
     <StartupObject>Gibraltar.Agent.Windows.Packager.Program</StartupObject>
     <ApplicationIcon>Loupe.ico</ApplicationIcon>
@@ -50,10 +50,6 @@
   <ItemGroup>
     <Reference Include="Gibraltar.Agent, Version=4.0.0.0, Culture=neutral, PublicKeyToken=ca42a1ee8d2e42d3, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Gibraltar.Agent.4.0.3.3459\lib\net20\Gibraltar.Agent.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Loupe.Agent.Internal, Version=4.0.0.0, Culture=neutral, PublicKeyToken=ca42a1ee8d2e42d3, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Gibraltar.Agent.4.0.3.3459\lib\net20\Loupe.Agent.Internal.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
