@@ -167,6 +167,7 @@ namespace Gibraltar.Agent.Windows.Packager
                                             //We need all of the server-specific parameters
                                             string sdsCustomer = commandArgs["customer"];
                                             string sdsServer = commandArgs["server"];
+                                            string sdsAppKey = commandArgs["key"];
                                             int sdsPort = 0;
                                             bool sdsUseSsl = false;
                                             string sdsBaseDirectory = null;
@@ -197,12 +198,26 @@ namespace Gibraltar.Agent.Windows.Packager
                                             if (string.IsNullOrEmpty(sdsCustomer) == false)
                                             {
                                                 //SDS using our server
-                                                packager.SendToServer(SessionCriteria.NewSessions, true, purgeSentSessions, sdsCustomer);
+                                                if (string.IsNullOrEmpty(sdsAppKey) == false)
+                                                {
+                                                    packager.SendToServer(SessionCriteria.NewSessions, sdsAppKey, true, purgeSentSessions, sdsCustomer);
+                                                }
+                                                else
+                                                {
+                                                    packager.SendToServer(SessionCriteria.NewSessions, true, purgeSentSessions, sdsCustomer);
+                                                }
                                             }
                                             else if (string.IsNullOrEmpty(sdsServer) == false)
                                             {
                                                 //override the server and all its related options.
-                                                packager.SendToServer(SessionCriteria.NewSessions, true, purgeSentSessions, sdsServer, sdsPort, sdsUseSsl, sdsBaseDirectory, sdsRepository);
+                                                if (string.IsNullOrEmpty(sdsAppKey) == false)
+                                                {
+                                                    packager.SendToServer(SessionCriteria.NewSessions, sdsAppKey, true, purgeSentSessions, sdsServer, sdsPort, sdsUseSsl, sdsBaseDirectory);
+                                                }
+                                                else
+                                                {
+                                                    packager.SendToServer(SessionCriteria.NewSessions, true, purgeSentSessions, sdsServer, sdsPort, sdsUseSsl, sdsBaseDirectory, sdsRepository);
+                                                }
                                             }
                                             else
                                             {
