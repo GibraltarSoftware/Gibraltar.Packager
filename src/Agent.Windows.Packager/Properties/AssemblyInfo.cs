@@ -12,7 +12,7 @@ using System.Security;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Gibraltar Software, Inc.")]
 [assembly: AssemblyProduct("Loupe")]
-[assembly: AssemblyCopyright("Copyright © 2008-2019 Gibraltar Software, Inc.")]
+[assembly: AssemblyCopyright("Copyright © 2008-2021 Gibraltar Software, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -35,6 +35,6 @@ using System.Security;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("4.8.0.0")]
-[assembly: AssemblyFileVersion("4.8.33.0")]
-[assembly: AssemblyInformationalVersionAttribute("4.8.33.0")]
+[assembly: AssemblyFileVersion("4.10.21.0")]
+[assembly: AssemblyInformationalVersion("4.10.21.0")]
 [assembly: AllowPartiallyTrustedCallers]
