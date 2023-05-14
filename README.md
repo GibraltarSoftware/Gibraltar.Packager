@@ -1,5 +1,8 @@
-Loupe Packager
+Loupe Packager (Moved to Gibraltar.Agent)
 ===================
+
+**This repository has been merged with the [Gibraltar.Agent](https://github.com/GibraltarSoftware/Gibraltar.Agent)
+Repository and is now maintained there.**
 
 This executable packages local Loupe log files and then can send them on to a Loupe Server or
 email or just write them to a Loupe Package File.  If you don't need
